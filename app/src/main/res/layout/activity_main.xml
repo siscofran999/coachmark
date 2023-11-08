@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txvTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="@string/label_ini_label_coachMark_top"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txvEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:text="@string/end"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/txvEndTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/end"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/txvStartTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginTop="150dp"
+        android:text="start top"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/txvStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:text="@string/start"
+        android:textSize="18sp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/txvCenter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="centerrrrrrrrr"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/txvStartBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginBottom="150dp"
+        android:text="start bottom"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true" />
+
+    <TextView
+        android:id="@+id/txvBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:text="@string/label_ini_label_coachMark_top"
+        android:textSize="18sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/txvEndBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:layout_marginBottom="150dp"
+        android:text="end bottom"
+        android:textSize="18sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

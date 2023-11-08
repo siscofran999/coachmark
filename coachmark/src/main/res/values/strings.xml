@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="coachmarkLabel_value_limit">%s/%s</string>
+    <string name="coachmarkNext">Next</string>
+    <string name="coachmarkSkip">Skip</string>
+</resources>
