@@ -40,15 +40,15 @@ dependencies {
     implementation("com.google.android.material:material:1.10.0")
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            create<MavenPublication>("release") {
-                from(components["release"])
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.siscofran999"
+            artifactId = "coachmark"
+            version = "1.0.1"
 
-                groupId = "com.github.siscofran999"
-                artifactId = "coachmark"
-                version = "1.0.0"
+            afterEvaluate {
+                from(components["release"])
             }
         }
     }
