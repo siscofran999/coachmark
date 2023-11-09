@@ -48,7 +48,7 @@ afterEvaluate {
 
                 groupId = "com.github.siscofran999"
                 artifactId = "coach-mark"
-                version = "0.9-beta"
+                version = "1.0.0"
             }
         }
     }
