@@ -47,7 +47,7 @@ afterEvaluate {
                 from(components["release"])
 
                 groupId = "com.github.siscofran999"
-                artifactId = "coach-mark"
+                artifactId = "coachmark"
                 version = "1.0.0"
             }
         }
