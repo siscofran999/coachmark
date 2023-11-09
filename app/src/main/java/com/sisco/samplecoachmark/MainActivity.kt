@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import com.sisco.coachmark.CoachMarkSequence
+import com.sisco.coachmark.Gravity
 import com.sisco.samplecoachmark.databinding.ActivityMainBinding
 
 class MainActivity : ComponentActivity() {
@@ -24,9 +25,10 @@ class MainActivity : ComponentActivity() {
                 getString(R.string.lorem_ipsum_text)
             )
             addItem(
-                binding.txvStartTop,
-                getString(R.string.title_start_top),
-                getString(R.string.lorem_ipsum_text)
+                targetView = binding.txvStartTop,
+                title = getString(R.string.title_start_top),
+                subTitle = getString(R.string.lorem_ipsum_text),
+                gravity = Gravity.END_BOTTOM
             )
             addItem(
                 binding.txvEndTop,
@@ -44,10 +46,11 @@ class MainActivity : ComponentActivity() {
                 getString(R.string.lorem_ipsum_text)
             )
             addItem(
-                binding.txvBottom,
-                getString(R.string.title_bottom),
-                getString(R.string.lorem_ipsum_text),
-                getString(R.string.label_btn_explore), null
+                targetView = binding.txvBottom,
+                title = getString(R.string.title_bottom),
+                subTitle = getString(R.string.lorem_ipsum_text),
+                positiveButtonText = getString(R.string.label_btn_explore),
+                skipButtonText = null
             )
             start(window?.decorView as ViewGroup)
             setOnFinishCallback {
