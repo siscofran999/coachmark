@@ -1,6 +1,8 @@
 # CoachMark
 [![](https://jitpack.io/v/siscofran999/coachmark.svg)](https://jitpack.io/#siscofran999/coachmark)
-This is library to show CoachMark or tooltips
+
+The coachmark library is created to highlight your features.
+I was inspired from https://github.com/chhatrasal09/CoachMark, but I adjusted it to fit my needs.
 
 # Result
 ![](https://github.com/siscofran999/coachmark/blob/master/image/result.gif)
