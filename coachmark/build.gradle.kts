@@ -25,11 +25,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "17"
     }
     buildFeatures {
         viewBinding = true
@@ -45,7 +45,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.siscofran999"
             artifactId = "coachmark"
-            version = "1.0.2"
+            version = ""
 
             afterEvaluate {
                 from(components["release"])
