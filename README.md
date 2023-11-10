@@ -1,8 +1,9 @@
 # CoachMark
+[![](https://jitpack.io/v/siscofran999/coachmark.svg)](https://jitpack.io/#siscofran999/coachmark)
 This is library to show CoachMark or tooltips
 
 # Result
-[![](https://github.com/coachmark/master/image/result.gif)](https://jitpack.io/#siscofran999/coachmark)
+![](https://github.com/siscofran999/coachmark/blob/master/image/result.gif)
 
 ## Getting Starting
 Add this in your root `settings.gradle.kts` file:
