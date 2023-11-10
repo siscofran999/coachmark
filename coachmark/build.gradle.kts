@@ -45,7 +45,7 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.siscofran999"
             artifactId = "coachmark"
-            version = ""
+            version = "0.9-beta"
 
             afterEvaluate {
                 from(components["release"])
