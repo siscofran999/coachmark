@@ -60,6 +60,11 @@ dependencies {
     }
 ```
 
+## ToDo
+- Support Jetpack Compose
+- Add Custom Background
+- Anything else ...
+
 ## License
 ```licence
 
