@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
@@ -38,6 +40,16 @@ android {
 
 dependencies {
     implementation("com.google.android.material:material:1.10.0")
+    testImplementation("junit:junit:4.13.2")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+}
+
+// Baca local.properties
+val localProperties = Properties().apply {
+    val file = rootProject.file("local.properties")
+    if (file.exists()) {
+        load(file.inputStream())
+    }
 }
 
 publishing {
@@ -45,10 +57,21 @@ publishing {
         register<MavenPublication>("release") {
             groupId = "com.github.siscofran999"
             artifactId = "coachmark"
-            version = "0.9-beta"
+            version = "0.9"
 
             afterEvaluate {
                 from(components["release"])
+            }
+        }
+    }
+
+    repositories {
+        maven {
+            name = "github"
+            url = uri("https://maven.pkg.github.com/siscofran999/coachmark")
+            credentials {
+                username = localProperties.getProperty("username") ?: ""
+                password = localProperties.getProperty("password") ?: ""
             }
         }
     }
