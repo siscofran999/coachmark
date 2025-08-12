@@ -58,7 +58,9 @@ publishing {
             groupId = "com.github.siscofran999"
             artifactId = "coachmark"
             version = "0.9"
-            artifact("$buildDir/outputs/aar/coachmark-release.aar")
+            afterEvaluate {
+                from(components["release"])
+            }
         }
     }
 
